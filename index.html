@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelPlanner</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+<body >
+
+  <header>
+    <h1>TravelPlanner</h1>
+    <nav id="nav">
+      <button data-view="discover">Discover</button>
+      <button data-view="itinerary">Itinerary</button>
+      <button data-view="travel agents"> Travel Agents<button>
+      <button data-view="my trips">My Trips</button>
+    </nav>
+  </header>
+
+
+  <div id="alerts" aria-live="polite"></div>
+
+  <main>
+
+
+    <section id="discover" class="view">
+        <h2>Where to next?</h2>
+        
+        <div class="bar">
+            <div class="form-group">
+              
+                <label for="search">Search</label >
+                <input id="search" type="text"   placeholder="search a country" name="search">
+                
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <select id="region" class="form-select">
+                    <option value="">All regions</option>
+                    <option>Africa</option>
+                    <option>America</option>
+                    <option>Asia</option>
+                    <option>Europe</option>
+                    <option>Oceania</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="status" class="muted"></p>
+        <div id="countries" class="grid"></div>
+    </section>
+
+    <section id="itinerary" class="view">
+        <h2>Itinerary planner</h2>
+    </section>
+
+    
+    <section id="agents" class="view">
+        <h2>Travel agents</h2>
+    </section>
+
+   
+    <section id="trips" class="view">
+        <h2>My trips</h2>
+    </section>
+
+    
+    <section id="testimonials" class="view">
+        <h2>Testimonials</h2>
+    </section>
+
+    <section id="contact" class="view">
+        <h2>Contact us</h2>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy;2026 TravelPlanner.Experience the world with us.</p>
+    <div>
+      <button data-view="testimonials">Testimonials</button>
+      <button data-view="contact">Contact us</button>
+    </div>
+  </footer>
+   
+
+  <script src="app.js"></script>
+</body>
+</html>

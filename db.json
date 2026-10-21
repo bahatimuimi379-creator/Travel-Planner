@@ -1,0 +1,52 @@
+{
+    "status": 200,
+    "countries":[
+        {
+            "id": 1,
+            "status": "Afghanistan",
+             "capital":"kabul",
+            "iso2": "AF",
+            "phonecode": "93",
+            "tld": ".af",
+            "region": "Asia",
+            "region_id": 3,
+            "nationality": "Afghan",
+            "emoji": "af",
+            "emojiU": "U+1F1E6 U+1F1EB",
+            "travel-agents":[
+                {
+                    "name":"ahmed",
+                    "charges":"$50"
+                },
+                {
+                    "name":"samira",
+                    "charges":"$40"   
+                }
+            ]
+                       
+        },
+        {
+           "id": 2,
+            "status": "kenya",
+            "capital":"Nairobi",
+            "iso2": "KE",
+            "phonecode": "254",
+            "tld": ".ke",
+            "region": "Africa",
+            "region_id": 3,
+            "nationality": "Kenyan",
+            "emoji": "ke",
+            "emojiU": "U+1F1E6 U+1F1EB",   
+            "travel-agents":[
+                {
+                    "name":"Amani",
+                    "charges":"ksh 2,000"
+                },
+                {
+                    "name":"kamau",
+                    "charges":"ksh 4,500"   
+                }
+            ]
+        }
+    ]
+}
