@@ -1,88 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TravelPlanner</title>
-  <link rel="stylesheet" href="style.css">
-  
-  
+  <link rel="stylesheet" href="css/index.css">
+
+
 </head>
-<body >
+
+<body>
 
   <header>
-    <h1>TravelPlanner</h1>
-    <nav id="nav">
-      <button data-view="discover">Discover</button>
-      <button data-view="itinerary">Itinerary</button>
-      <button data-view="travel agents"> Travel Agents<button>
-      <button data-view="my trips">My Trips</button>
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo" width="150" height="90" class="d-inline-block align-text-top">
+
+        </a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured-places">Places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link join-us">Join us</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
     </nav>
+
   </header>
 
 
   <div id="alerts" aria-live="polite"></div>
 
   <main>
+    <section id="home">
+      <h1>Plan the trip. Then go.</h1>
+      <p>Search countries by region, build a day-by-day itinerary, talk to travel agents and keep every trip in one
+        place.</p>
+      <div>
+        <button class="btn-cta">Start planning</button>
+        <button class="btn-cta-outline">See what it does</button>
+      </div>
+    </section>
+
+    <!-- featured places -->
+    <section class="places">
+      <h3>Featured Places</h3>
+      <section id="featured-places">
+        <section class="card" style="max-width: 500px">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=70"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Chinatown</h4>
+            <p class="card-text"> an urban ethnic enclave populated primarily by people of Chinese descent located
+              outside of Greater China</p>
+            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+          </div>
+        </section>
+
+        <section class="card" style="max-width: 500px">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRuULxf4txSIaCuMWziDZ--xcpfQ9_aUVMD3Tk66itoQ&s=10"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Masaai Mara camp</h4>
+            <p class="card-text">Mara River Camp sits on a quiet bend of the Mara River, at the foot of the Oloololo
+              Escarpment.
+            </p>
+            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+          </div>
+        </section>
+      </section>
+
+    </section>
 
 
-    <section id="discover" class="view">
-        <h2>Where to next?</h2>
-        
-        <div class="bar">
-            <div class="form-group">
+    <!-- everything a trip needs -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Everything a trip needs</h2>
+        <div class="trip ">
+          <div class="card" style="max-width: 500px;">
+            <div class="card-body">
+              <h4 class="card-title">Discover</h4>
               
-                <label for="search">Search</label >
-                <input id="search" type="text"   placeholder="search a country" name="search">
-                
+              <p class="card-text">search any country,filter by region and open its detail</p>
+              <a href="#">Open discover</a>
             </div>
+          </div>
+          <div class="card" style="max-width: 500px;">
+            <div class="card-body">
+              <h4 class="card-title">Itinerary</h4>
+              
+              <p class="card-text">lay out each day of your trip so nothing gets double checked</p>
+              <a href="#">Open itinerary</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 500px;">
+            <div class="card-body">
+              <h4 class="card-title">my trips</h4>
 
-            <div class="form-group">
-                <label for="region">Region</label>
-                <select id="region" class="form-select">
-                    <option value="">All regions</option>
-                    <option>africa</option>
-                    <option>america</option>
-                    <option>asia</option>
-                    <option>europe</option>
-                    <option>oceania</option>
-                </select>
+              <p class="card-text"> save countries you want to visit and come back to them</p>
+              <a href="#">Open my trips</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section id="discover" class="view">
+        <h2>Where to next?</h2>
+
+        <div class="bar">
+          <div class="form-group">
+
+            <label for="search">Search</label>
+            <input id="search" type="text" placeholder="search a country" name="search">
+
+          </div>
+
+          <div class="form-group">
+            <label for="region">Region</label>
+            <select id="region" class="form-select">
+              <option value="">All regions</option>
+              <option>africa</option>
+              <option>america</option>
+              <option>asia</option>
+              <option>europe</option>
+              <option>oceania</option>
+            </select>
+          </div>
         </div>
 
         <p id="status" class="muted"></p>
         <div id="countries" class="grid"></div>
-    </section>
+      </section>
 
-    
-<div id="country-modal" class="hidden" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;">
-  <div style="background: white; padding: 24px; border-radius: 12px; max-width: 400px; width: 90%; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
-    <button id="close-modal" style="position: absolute; top: 12px; right: 12px; border: none; background: transparent; font-size: 20px; cursor: pointer;">&times;</button>
-    <div id="modal-content"></div>
-  </div>
-</div>
-    <section id="itinerary" class="view">
+
+
+      <section id="itinerary" class="view">
         <h2>Itinerary planner</h2>
-    </section>
+      </section>
 
-    
-    <section id="agents" class="view">
+
+      <section id="agents" class="view">
         <h2>Travel agents</h2>
-    </section>
+      </section>
 
-   
-    <section id="trips" class="view">
+
+      <section id="trips" class="view">
         <h2>My trips</h2>
-    </section>
+      </section>
 
-    
-    <section id="testimonials" class="view">
+
+      <section id="testimonials" class="view">
         <h2>Testimonials</h2>
-    </section>
+      </section>
 
-    <section id="contact" class="view">
+      <section id="contact" class="view">
         <h2>Contact us</h2>
-    </section>
+      </section>
+
+      <section id="testimonials" class="py-5 bg-white">
+  <div class="testaments custom-header-style">
+    <h2 class="fw-bold mb-4">What travellers say</h2>
+    <div class="testaments">
+      <div class="col"><figure class="card h-100 border-0 bg-body-tertiary p-4 mb-0"><blockquote class="mb-3">I used to keep trips in five different notes apps. Now it’s one itinerary I can open on the bus.</blockquote><figcaption><strong>Amina W.</strong><br><small class="text-secondary">Nairobi, Kenya</small></figcaption></figure></div>
+      <div class="col"><figure class="card h-100 border-0 bg-body-tertiary p-4 mb-0"><blockquote class="mb-3">Filtering by region made it easy to compare Asia and Oceania for our honeymoon.</blockquote><figcaption><strong>Daniel O.</strong><br><small class="text-secondary">Kampala, Uganda</small></figcaption></figure></div>
+      <div class="col"><figure class="card h-100 border-0 bg-body-tertiary p-4 mb-0"><blockquote class="mb-3">The agent I found through the app sorted my safari lodge in one afternoon.</blockquote><figcaption><strong>Grace M.</strong><br><small class="text-secondary">Mombasa, Kenya</small></figcaption></figure></div>
+    </div>
+  </div>
+</section>
+     
   </main>
 
   <footer id="footer">
@@ -92,8 +202,9 @@
       <button data-view="contact">Contact us</button>
     </div>
   </footer>
-   
+
 
   <script src="app.js"></script>
 </body>
+
 </html>
