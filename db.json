@@ -1,9 +1,9 @@
 {
-    "status": 200,
+   
     "countries":[
         {
             "id": 1,
-            "status": "Afghanistan",
+            "status": "Afghanistan<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGq5rDoJ9qXvujVfvl-5cEiA_lHY4k2e2BGvLgWwIq5A&s=10' style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
              "capital":"kabul",
             "iso2": "AF",
             "phonecode": "93",
@@ -13,6 +13,7 @@
             "nationality": "Afghan",
             "emoji": "af",
             "emojiU": "U+1F1E6 U+1F1EB",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGq5rDoJ9qXvujVfvl-5cEiA_lHY4k2e2BGvLgWwIq5A&s=10",
             "travel-agents":[
                 {
                     "name":"ahmed",
@@ -27,7 +28,7 @@
         },
         {
            "id": 2,
-            "status": "kenya",
+            "status": "kenya<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJq9SsCaPdW3cRrXblNY0OoKBHCub26IMTP9bqLzCzdQ&s=10'style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
             "capital":"Nairobi",
             "iso2": "KE",
             "phonecode": "254",
@@ -35,8 +36,79 @@
             "region": "Africa",
             "region_id": 3,
             "nationality": "Kenyan",
-            "emoji": "ke",
-            "emojiU": "U+1F1E6 U+1F1EB",   
+             "emoji": "ke",
+            "emojiU": "U+1F1F0 U+1F1EA",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJq9SsCaPdW3cRrXblNY0OoKBHCub26IMTP9bqLzCzdQ&s=10"  ,
+            "travel-agents":[
+                {
+                    "name":"Amani",
+                    "charges":"ksh 2,000"
+                },
+                {
+                    "name":"kamau",
+                    "charges":"ksh 4,500"   
+                }
+            ]
+        },
+        {
+           "id": 3,
+            "status": "DRC <br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oN75clrQBlUW5WLj330GhbWalS_pa7Vy6ez0YDOk5A&s=10'style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
+            "capital":"kinshasaa",
+            "region":"Africa",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oN75clrQBlUW5WLj330GhbWalS_pa7Vy6ez0YDOk5A&s=10"  ,
+            "travel-agents":[
+                {
+                    "name":"Amani",
+                    "charges":"ksh 2,000"
+                    
+                },
+                {
+                    "name":"kamau",
+                    "charges":"ksh 4,500"
+                      
+                }
+            ]
+        },
+        {
+           "id": 4,
+            "status": "burundi<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2E_I3rtPeF-jPFWYpMh73d1IyTishuBBaP0LBLNcVDA&s=10'style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
+            "capital":"bujumbura",
+           "region":"Africa",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2E_I3rtPeF-jPFWYpMh73d1IyTishuBBaP0LBLNcVDA&s=10"  ,
+            "travel-agents":[
+                {
+                    "name":"Amani",
+                    "charges":"ksh 2,000"
+                },
+                {
+                    "name":"kamau",
+                    "charges":"ksh 4,500"   
+                }
+            ]
+        },
+        {
+           "id": 5,
+            "status": "Tanzania<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2mml4rUD3_jOX_HnL32ql3VyPECrT2dOduO12-Zyyw&s=10'style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
+            "capital":"daresalam",
+            "region":"Africa",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2mml4rUD3_jOX_HnL32ql3VyPECrT2dOduO12-Zyyw&s=10" ,
+            "travel-agents":[
+                {
+                    "name":"Amani",
+                    "charges":"ksh 2,000"
+                },
+                {
+                    "name":"kamau",
+                    "charges":"ksh 4,500"   
+                }
+            ]
+        },
+        {
+           "id": 6,
+            "status": "uganda<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc0aiJH8LLs8KJbSopEgpfDUjuLdzKWIjWgIjHlYb5Q&s=10'style='width:100%; max-width:200px;border-radius:8px; display:block; margin-top:10px;'>",
+            "capital":"kampala",
+            "region":"Africa",
+            "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc0aiJH8LLs8KJbSopEgpfDUjuLdzKWIjWgIjHlYb5Q&s=10"  ,
             "travel-agents":[
                 {
                     "name":"Amani",
@@ -49,4 +121,8 @@
             ]
         }
     ]
+
+           
+        
+    
 }

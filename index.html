@@ -41,11 +41,11 @@
                 <label for="region">Region</label>
                 <select id="region" class="form-select">
                     <option value="">All regions</option>
-                    <option>Africa</option>
-                    <option>America</option>
-                    <option>Asia</option>
-                    <option>Europe</option>
-                    <option>Oceania</option>
+                    <option>africa</option>
+                    <option>america</option>
+                    <option>asia</option>
+                    <option>europe</option>
+                    <option>oceania</option>
                 </select>
             </div>
         </div>
@@ -54,6 +54,13 @@
         <div id="countries" class="grid"></div>
     </section>
 
+    
+<div id="country-modal" class="hidden" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+  <div style="background: white; padding: 24px; border-radius: 12px; max-width: 400px; width: 90%; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+    <button id="close-modal" style="position: absolute; top: 12px; right: 12px; border: none; background: transparent; font-size: 20px; cursor: pointer;">&times;</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
     <section id="itinerary" class="view">
         <h2>Itinerary planner</h2>
     </section>

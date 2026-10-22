@@ -141,7 +141,37 @@ footer {
     
 }
 
+#countries p {
+  background-color: #ffffff;
+  border: 1px solid #e6def2;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+#countries p:hover {
+  transform: translateY(-2px);
+}
+
+
+#countries p img {
+  width: 100% !important;
+  height: 140px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto 12px auto !important;
+  border-radius: 4px;
+}
 footer p {
     font-size: 18px;
     color: #7c3aed;
+}
+
+#countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minimax(220px,1fr));
+    gap:24px;
+    padding:20px 0;
 }
