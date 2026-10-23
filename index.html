@@ -56,7 +56,9 @@
   <main>
     <dialog id="popup">
       <p>
-        Travel Planner:is a web application that helps users organize their trips by finding destinations, planning daily activities, creating itineraries, and managing their travel budget. It makes trip planning simple, organized, and convenient.
+        Travel Planner:is a web application that helps users organize their trips by finding destinations, planning
+        daily activities, creating itineraries, and managing their travel budget. It makes trip planning simple,
+        organized, and convenient.
       </p>
       <button id="close">Close</button>
 
@@ -70,7 +72,7 @@
         place.</p>
       <div>
         <button class="btn-cta">Start planning</button>
-        <button id ="about-btn" class="btn-cta-outline">About</button>
+        <button id="about-btn" class="btn-cta-outline">About</button>
       </div>
     </section>
 
@@ -95,6 +97,33 @@
 
       </section>
 
+    </section>
+    <section>
+      <h3>Add a new place</h3>
+      <form>
+        <div class="mb-3">
+          <label  class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Region</label>
+          <input type="text" class="form-control" id="inputRegion">
+        </div>
+          <div class="mb-3">
+          <label  class="form-label">Country</label>
+          <input type="text" class="form-control" id="inputCountry">
+        </div>
+          <div class="mb-3">
+          <label  class="form-label">imageUrl</label>
+          <input type="text" class="form-control" id="inputImageUrl">
+        </div>
+          <div class="mb-3">
+          <label  class="form-label">Decription</label>
+          <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-solid theme-primary">Submit</button>
+      </form>
     </section>
 
 

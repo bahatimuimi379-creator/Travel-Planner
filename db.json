@@ -1,51 +1,60 @@
 {
-    "places": [
-        {
-            "id": "1",
-            "name": "Masaai Mara",
-            "country": "Kenya",
-            "region": "Africa",
-            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQv0TT92ISeI1nwJVazm9DbwnAOf-5joBxoQzXKdBzRA&s=10",
-            "traveAgentId": "1",
-            "description": "exprience African wildlife with greate views of sunset and animals"
-        },
-        {
-            "id": "2",
-            "name": "Victoria falls",
-            "country": "Zambia",
-            "region": "Africa",
-            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Gl_E6PEgUAmoLjGJeTKN3SI1wtq-4QIFj9_1s4oHBw&s=10",
-            "traveAgentId": "2",
-            "description": "Unforgateable exprience of rainbow in the Victorian Falls"
-        },
-        {
-            "id": "3",
-            "name": "Cairo",
-            "region": "Africa",
-            "country": "Eygpt",
-            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2VUrIMR9xJlyYyjQhP3_VBhA4aghNsfC_8_O2XqFZg&s=10",
-            "traveAgentId": "3",
-            "description": "pyraminds that tell the stories of old Eygpt"
-        }
-    ],
-    "travelagent": [
-        {
-            "id": "1",
-            "name": "abdul amin",
-            "country": "Kenya",
-            "contact": "0799979800"
-        },
-        {
-            "id": "2",
-            "name": "imani pendo",
-            "country": "zambia",
-            "contact": "0799969700"
-        },
-        {
-            "id": "3",
-            "name": "dennis right",
-            "country": "Eygpt",
-            "contact": "070989800"
-        }
-    ]
+  "places": [
+    {
+      "id": "1",
+      "name": "Masaai Mara",
+      "country": "Kenya",
+      "region": "Africa",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQv0TT92ISeI1nwJVazm9DbwnAOf-5joBxoQzXKdBzRA&s=10",
+      "traveAgentId": "1",
+      "description": "exprience African wildlife with greate views of sunset and animals"
+    },
+    {
+      "id": "2",
+      "name": "Victoria falls",
+      "country": "Zambia",
+      "region": "Africa",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Gl_E6PEgUAmoLjGJeTKN3SI1wtq-4QIFj9_1s4oHBw&s=10",
+      "traveAgentId": "2",
+      "description": "Unforgateable exprience of rainbow in the Victorian Falls"
+    },
+    {
+      "id": "3",
+      "name": "Cairo",
+      "region": "Africa",
+      "country": "Eygpt",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2VUrIMR9xJlyYyjQhP3_VBhA4aghNsfC_8_O2XqFZg&s=10",
+      "traveAgentId": "3",
+      "description": "pyraminds that tell the stories of old Eygpt"
+    },
+    {
+      "name": "Bahati Muimi",
+      "region": "africa",
+      "country": "uganda",
+      "imageUrl": "",
+      "description": "deerr",
+      "id": "TWa2zr-_fK0"
+    }
+  ],
+  "travelagent": [
+    {
+      "id": "1",
+      "name": "abdul amin",
+      "country": "Kenya",
+      "contact": "0799979800"
+    },
+    {
+      "id": "2",
+      "name": "imani pendo",
+      "country": "zambia",
+      "contact": "0799969700"
+    },
+    {
+      "id": "3",
+      "name": "dennis right",
+      "country": "Eygpt",
+      "contact": "070989800"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

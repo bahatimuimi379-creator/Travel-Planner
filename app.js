@@ -3,6 +3,7 @@ console.log("app.js is running");
 
 const views = document.querySelectorAll(".view");
 const API = "http://localhost:4001/places"
+const API2 ="https://bahatimuimi379-creator.github.io/Travel-Planner/db.json"
 let allCountries = [];
 
 const place_body = document.querySelector("#featured-places")
@@ -68,3 +69,54 @@ about_btn.addEventListener(`click`,()=>{
 close.addEventListener(`click`,()=>{
   popup.close()
 })
+
+// fetch (API,
+//   {
+//     method:"POST",
+//     headers:{
+//       "Content-Type":"application/json"
+//     },
+//     body:JSON.stringify({
+
+
+//     })
+//   }
+// ) 
+
+
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async (event) => {
+
+  event.preventDefault();
+
+  const newDestination = {
+    name: document.getElementById("inputName").value.trim(),
+    region: document.getElementById("inputRegion").value.trim(),
+    country: document.getElementById("inputCountry").value.trim(),
+    imageUrl: document.getElementById("inputImageUrl").value.trim(),
+    description: document.getElementById("feedback").value.trim(),
+  };
+
+  try {
+    const response = await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newDestination),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const savedData = await response.json();
+    console.log("Saved:", savedData);
+
+    form.reset();
+    alert("Submitted successfully!");
+  } catch (error) {
+    console.error("Error posting data:", error);
+    alert("Something went wrong. Is json-server running?");
+  }
+});
