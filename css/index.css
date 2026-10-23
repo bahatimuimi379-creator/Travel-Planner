@@ -1,9 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css");
 
-body{
-    background-color: plum;
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: white;
+    color: #1a2332;
 
 }
+
 .join-us {
     width: 120px;
     height: 40px;
@@ -34,9 +41,13 @@ li>a {
 
     background-size: cover;
     background-position: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.txt-white {
+    color: white;
 }
 
 .btn-cta {
@@ -59,76 +70,118 @@ li>a {
     border-radius: 50px;
 
 }
-#featured-places{
-    display:flex;
-    gap:15px;
+
+#featured-places {
+    display: flex;
+    gap: 15px;
     height: 100vh;
-    width:100%;
+    width: 100%;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 80px;
-    
+
 
 
 }
-.places{
+
+.places {
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top:80px;
+    padding-top: 80px;
     border: 1px solid white;
 }
-h3{
+
+h3 {
     color: purple;
 
 }
-.trip{
+
+.trip {
     height: 400px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:80px;
+    padding-top: 80px;
     padding-bottom: 80px;
     border: 1px solid white;
-    gap:30px;
-    background-color:white;
+    gap: 30px;
+    background-color: white;
 
 
 }
-.testaments{
-    
-    display:flex;
-    gap:24px;
+
+.testaments {
+
+    display: flex;
+    gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 
 }
 
 .testaments .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #1a2332 !important; 
-  color: #ffffff !important;           
-  border-radius: 12px !important;       
-  line-height: 1.6;   
-}                  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1a2332 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    line-height: 1.6;
+}
 
 
 .testaments blockquote {
-  margin-bottom: 20px !important;
-  font-size: 15px;
+    margin-bottom: 20px !important;
+    font-size: 15px;
 }
 
 .testaments figure {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-.custom-header-style h2{
+
+.custom-header-style h2 {
     color: #1c2434;
     letter-spacing: 0.5px;
+}
+
+.form-label {
+    color: #1c2434;
+}
+
+.form-control {
+    background-color: rgb(214, 223, 214);
+    border: none;
+    color: #1a2332;
+}
+
+.form-container {
+    max-width: 800px;
+}
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#testimonials{
+    background-color:rgb(216, 222, 227);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+#popup{
+    border: none;
+    font-size: 15px;
+    Max-width: 800px;
+
 }
